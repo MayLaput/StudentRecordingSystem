@@ -8,10 +8,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #0077b6, #87ceeb, #e0f7fa);
-  background-size: 300% 300%;
-  animation: gradientAnimation 6s infinite alternate ease-in-out;
-  overflow: hidden;
+  background: url('https://i.pinimg.com/736x/5d/e6/9b/5de69b07cf7c77bc37d26d9245d684fd.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .container {
@@ -22,14 +20,12 @@ body {
   border: 2px solid #ff6f61;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   animation: fadeIn 1s ease-in-out;
+  max-width: 500px;
+  position: relative;
 }
 
+/* Smooth fade-in effect */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
-}
-
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
 }
